@@ -3,10 +3,13 @@ description: File a bug report
 title: "[Bug]: "
 labels: [bug, triage]
 body:
-  - type: markdown
+  - type: textarea
+    id: screenshot
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: Screenshot
+      description: Please attach a screenshot where the bug/issue shows up.
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
