@@ -60,12 +60,20 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks. \n Can be accessed by clicking Ctrl + Shirt + I together in Chrome/Edge
+      description: >
+        Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+        Can be accessed by clicking Ctrl + Shirt + I together in Chrome/Edge
       render: shell
   - type: dropdown
     id: severity
     attributes:
       label: What's the severity of the bug?
+      description: |
+        Examples you can use for severity:
+        Critical: The issue causes the browser to crash and progress is lost.
+        Major: The issue causes you to stop testing and progress is entact, but you cannot move forward.
+        Minor: The issue causes you to stop testing, progress is entact and you are able to move forward.
+        Trivial: Something unexpected happened but progress is entact and you are able to move forward with no changes affected.
       options:
         - critical
         - major
