@@ -47,9 +47,11 @@ body:
     attributes:
       label: Fill in the os environment the bug/issue showed up in.
       value: |
-      1. Browser and Version: 
-      2. OS: 
-      3. Viewport Size: 
+        1. Browser and Version: 
+        2. OS: 
+        3. Viewport Size: 
+        ...
+      render: bash
   - type: input
     id: sourceurl
     attributes:
