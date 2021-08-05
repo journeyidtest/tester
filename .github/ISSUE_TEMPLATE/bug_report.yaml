@@ -46,7 +46,7 @@ body:
     id: environment
     attributes:
       label: Fill in the os environment the bug/issue showed up in.
-       value: |
+      value: |
       1. Browser and Version: 
       2. OS: 
       3. Viewport Size: 
