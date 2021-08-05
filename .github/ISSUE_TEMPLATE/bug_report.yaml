@@ -10,17 +10,15 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Describe the bug
+      description: Give a clear and concise description of what the bug is.
     validations:
       required: true
   - type: textarea
     id: at-what-step-broke
     attributes:
       label: At which step did the bug/issue show up?
-      description: Go into detail at which step in the testing the bug/issue showed up
+      description: Go into detail at which step in the testing process the bug/issue showed up,
     validations:
       required: true
   - type: input
@@ -45,12 +43,11 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: Fill in the os environment the bug/issue showed up in.
+      label: Fill out the os environment the bug/issue showed up in.
       value: |
         1. Browser and Version: 
         2. OS: 
         3. Viewport Size: 
-        ...
       render: bash
   - type: input
     id: sourceurl
@@ -63,7 +60,7 @@ body:
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks. Can be accessed by clicking Ctrl + Shirt + I together in Chrome/Edge
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks. \n Can be accessed by clicking Ctrl + Shirt + I together in Chrome/Edge
       render: shell
   - type: dropdown
     id: severity
